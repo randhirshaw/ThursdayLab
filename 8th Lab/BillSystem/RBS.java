@@ -1,4 +1,3 @@
-package MyWay;
 
 public class RBS {
 
