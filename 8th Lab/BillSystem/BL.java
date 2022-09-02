@@ -1,4 +1,4 @@
-package MyWay;
+
 
 public class BL {
 	String fName;
