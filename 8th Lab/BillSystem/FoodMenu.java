@@ -1,4 +1,4 @@
-package MyWay;
+
 
 public class FoodMenu {
 	private int foodId;
