@@ -53,8 +53,13 @@ public class FDS {
 		do {
 			System.out.println("Please Enter Food id: ");
 			int id = sc.nextInt();
-			FoodMenu fd = (FoodMenu) list.get(id);
-			FDS.order(fd.getFoodName(), fd.getFoodPrice());
+			try {
+				FoodMenu fd = list.get(id);
+				FDS.order(fd.getFoodName(), fd.getFoodPrice());
+			} catch(Exception e) {
+				System.out.println("***Please Enter Valid Food Id!!***");
+				break;
+			}
 
 			System.out.println("Wanna have more food? Yes/No: ");
 			ch=sc.next().charAt(0);
