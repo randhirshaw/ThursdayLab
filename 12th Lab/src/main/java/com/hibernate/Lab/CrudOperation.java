@@ -11,7 +11,6 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
 public class CrudOperation {
-	//static ArrayList<Student> student =new ArrayList<Student>();
 	static Scanner sc=new Scanner(System.in);
 	static SessionFactory sf=new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 	static Session session=sf.openSession();
